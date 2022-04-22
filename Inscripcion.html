@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/Inscripciones.css">
+    <title>Inscripcion</title>
+    <script src="https://kit.fontawesome.com/2997da40e1.js" crossorigin="anonymous"></script>
+<body>
+    <header>
+		<input type="checkbox" name="menu" id="btnMenu">
+		<label for="btnMenu"><img src="css/img/menu.png"></label>
+        <nav class="menu">
+			<div class="logo">
+	            <img src="css/img/logo.png">
+			</div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">El Club</a></li>
+                <li><a href="#">Actividades</a></li>
+                <li><a href="#">Torneo</a></li>
+                <li><a href="#">Inscripcion en linea</a></li>
+                <li><a href="#">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="titulo">- INSCRIBETE -</h1>
+    <main>
+        <section class="cont1">
+            <p class="info">En esta escuela de artes marciales mixtas buscamos enseñarte el como defenderte de cualquier persona, enseñamos la disiplina que necesitas y te damos un gran valor como persona. No esperes mas en inscribirte forma parte de nuestra gran familia. Contamos con entrenadores de alto nivel los cuales te enseñaran sin ningun problema sobre las artes marciales, recuerda, <e>"El esfuerzo de hoy, sera la recompenza de mañana"</e></p>
+        </section> 
+        <section class="cont2">
+             <article class="form">
+                <label class="txtInfo">Nombres:</label>
+                <input type="text" name="nombre" placeholder="Escriba sus nombres" required>
+                <label class="txtInfo">Apellidos:</label>
+                <input type="text" name="apellido" placeholder="Escriba sus apellidos" required>
+                <label class="txtInfo">Fecha de nacimiento:</label>
+                <input type="date" name="fechaNac" required>
+                <label class="txtInfo">Edad:</label>
+                <input type="number" min="5" max="99" name="edad" required>
+                <label class="txtInfo">Genero:</label>
+                <div class="sexo">
+                    <input type="radio" name="genero" required><label>Masculino</label>
+                    <input type="radio" name="genero" required><label>Femenino</label>
+                </div>
+                <label class="txtInfo">Correo Electrónico:</label>
+                <input type="email" name="correo" placeholder="Escriba el correo electrónico" required>
+                <label class="txtInfo">Departamento:</label>
+                <select name="departamento" class="dep">
+                    <option value="San salvador">San Salvador</option>
+                    <option value="Ahuachapán">Ahuachapán</option>
+                    <option value="Cabañas">Cabañas</option>
+                    <option value="Chalatenango">Chalatenango</option>
+                    <option value="Cuscatlán">Cuscatlán</option>
+                    <option value="La Libertad">La Libertad</option>
+                    <option value="Morazán">Morazán</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Santa Ana">Santa Ana</option>
+                    <option value="San Miguel">San Miguel</option>
+                    <option value="San Vicente">San Vicente</option>
+                    <option value="Sonsonate">Sonsonate</option>
+                    <option value="La Unión">La Unión</option>
+                    <option value="Usulután">Usulután</option>
+                </select>
+                <label class="txtInfo">Domicilio:</label>
+                <textarea name="domicilio" rows="4" cols="50" class="domi"></textarea>
+                <div class="send">
+                    <input type="submit" value="Registrarse">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="#"><img src="css/img/facebook.png" class="ico"></a>
+        <a href="#"><img src="css/img/twiter.png" class="ico"></a>
+        <a href="#"><img src="css/img/youtube.png" class="icoy"></a>
+        <a href="#"><img src="css/img/instagram.png" class="ico"></a>
+        <p>Todos los derechos reservados</p>
+        <p> | </p>
+        <p>Diseñada por Cristian Pineda</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: #FFEFF1;
+}
+
+header{
+    background-color: #7F7B8F;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 20%;
+    justify-content: center;
+    align-items: center;
+	padding-top: 10px;
+}
+
+#btnMenu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+}
+
+header>label>img{
+	width: 100%;
+}
+
+.menu img{
+    width: 75px;
+    height: 75px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-width: 250px;
+}
+
+.menu>ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu>ul>li{
+	display: flex;
+    padding: 15px;
+    margin: 15px;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu>ul>li>a{
+	display: block;
+	width: 150px;
+	text-align: center;
+    text-decoration: none;
+    background-color: #FCAF04;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu>ul>li>a:hover{
+    background-color: #FFEFF1;
+    color:  #FCAF04; 
+}
+
+.titulo{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    min-width: 250px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    margin-top: 50px;
+    width: 80%;
+    min-width: 280px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont1{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.info{
+    width: 80%;
+    font-size: 1.2em;
+}
+
+.info>e{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.cont2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 50%;
+    min-width: 260px;
+    justify-content: flex-start;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form>input{
+    width: 50%;
+    min-width: 250px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.form>input::placeholder{
+	font-size: 1.2em;
+}
+
+ .dep{
+    width: 50%;
+    min-width: 250px;
+    line-height: 25px;
+    margin-bottom: 10px;
+ }
+
+.sexo{
+    margin-bottom: 10px;
+}
+
+.domi{
+    width: 50%;
+    min-width: 240px;
+}
+
+.send{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-top: 15px;
+    padding: 5px;
+	min-width: 260px;
+}
+
+.send>input{
+    padding: 10px;
+    width: 150px;
+    background-color: #FCAF04;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: 0.5s;
+	font-size: 1.2em;
+}
+
+.send>input:hover{
+    background-color: #7F7B8F;  
+    color: #FCAF04;
+}
+
+footer{
+    width: 100%;
+    min-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #7F7B8F;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.ico{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.icoy{
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+}
+
+@media (max-width:768px){
+
+	header>label{
+		display: block;
+		overflow-y: hidden;
+	}
+
+	.menu{
+		width: 100%;
+		margin-left: -200%;
+		position: absolute;
+	}
+
+	.logo{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		align-items: center;
+	}
+
+	.menu>ul{
+		flex-direction: column;
+	}
+
+	#btnMenu:checked ~ .menu{
+		margin: 0;
+		position: relative;
+	}
+
+	.cont1{
+		justify-content: center;
+	}
+
+	.send{
+		justify-content: center;
+	}
+
+}
